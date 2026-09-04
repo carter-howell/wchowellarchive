@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Web-Controlled RC Car | William C. Howell</title>
+  <meta name="description"
+    content="ESP32-CAM web-controlled RC car with live camera feed, WiFi browser control, Xbox controller support, L298N motor driver, boost converter, soldered wiring, and 3D-printed parts.">
+  <meta name="keywords"
+    content="ESP32-CAM, RC car, live camera feed, WiFi control, Xbox controller, L298N, motor control, 3D printing, embedded systems">
+  <meta name="author" content="William C. Howell">
+  <meta property="og:title" content="Web-Controlled RC Car with Live Camera Feed">
+  <meta property="og:description" content="ESP32-CAM vehicle with browser control, Xbox support, and soldered motor-control electronics.">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://wchowellarchive.web.app/Projects/RCCar/Main.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Web-Controlled RC Car | William C. Howell">
+  <meta name="twitter:description" content="ESP32-CAM web-controlled RC car with live camera feed, WiFi browser control, Xbox controller support, L298N motor driver, boost converter, soldered wiring, and 3D-printed parts.">
+  <meta name="twitter:image" content="https://wchowellarchive.web.app/Projects/RCCar/Main.jpg">
+  <link rel="canonical" href="https://wchowellarchive.web.app/Projects/RCCar/RCCar.html">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" href="/favicon.svg">
+  <link rel="stylesheet" href="../style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "Web-Controlled ESP32-CAM RC Car",
+      "description": "ESP32-CAM web-controlled RC car with live camera feed, WiFi browser control, Xbox controller support, L298N motor driver, boost converter, soldered wiring, and 3D-printed parts.",
+      "image": "https://wchowellarchive.web.app/Projects/RCCar/Main.jpg",
+      "url": "https://wchowellarchive.web.app/Projects/RCCar/RCCar.html",
+      "author": {
+          "@type": "Person",
+          "name": "William C. Howell"
+      },
+      "keywords": "ESP32-CAM, web-controlled RC car, L298N, motor control, embedded systems, WiFi video"
+  }
+  </script>
+
+  <script type="module" src="../../firebase.js"></script>
+  <script type="module" src="../../main.js"></script>
+</head>
+
+<body data-theme="dark">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/index.html">Back to Portfolio</a>
+      <button id="theme-toggle" class="btn-icon" type="button" aria-label="Toggle light and dark theme">Theme</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <article class="card" data-project-id="/Projects/RCCar/RCCar.html">
+      <h1>Web-Controlled ESP32-CAM RC Car</h1>
+      <p class="meta">EE Project | 2025 | Ongoing</p>
+      <div class="tag-list">
+        <span>ESP32-CAM</span><span>WiFi</span><span>Motor Control</span><span>L298N</span><span>Xbox Controller</span><span>3D Printing</span>
+      </div>
+      <p class="project-summary">
+        Built a browser-controlled vehicle around an ESP32-CAM, combining live video, WiFi control, gamepad input, motor driving, soldered wiring, and a 3D-printed chassis.
+      </p>
+      <dl class="project-facts">
+        <div><dt>Controller</dt><dd>AI Thinker ESP32-CAM with browser interface</dd></div>
+        <div><dt>Drive</dt><dd>Mini L298N motor driver and 1S battery power system</dd></div>
+        <div><dt>Fabrication</dt><dd>Tinkercad chassis design and Kobra 3 prints</dd></div>
+      </dl>
+      <img src="/Projects/RCCar/Main.jpg" alt="Web-controlled ESP32-CAM RC car" decoding="async">
+
+      <h2>Objective</h2>
+      <p>
+        The goal was to build a compact RC platform that could stream video and respond to browser or Xbox controller input. The project gave me a practical way to combine embedded networking, motor control, power conversion, wiring, and mechanical iteration.
+      </p>
+
+      <h2>Implementation</h2>
+      <p>
+        The ESP32-CAM handles the live video stream and control interface. Motor outputs are routed through a mini L298N driver, and the power system uses a 1S battery with a charging and boost-converter board. I soldered the wiring to protoboard and used female connector pins so parts could be replaced during testing.
+      </p>
+      <img src="/Projects/RCCar/Parts1.png" alt="RC car electronics parts" loading="lazy" decoding="async">
+      <img src="/Projects/RCCar/Parts2.png" alt="Additional RC car parts and connectors" loading="lazy" decoding="async">
+
+      <h2>Build and Test</h2>
+      <p>
+        I designed the chassis in Tinkercad, printed parts on a Kobra 3, and iterated around component fit and wiring access. After soldering, I tested the drive electronics and code together so the camera stream, control pins, and gamepad input could be debugged as one system.
+      </p>
+      <img src="/Projects/RCCar/Soldered.jpg" alt="Soldered RC car electronics" loading="lazy" decoding="async">
+
+      <h2>What It Demonstrates</h2>
+      <ul>
+        <li>ESP32-CAM setup for browser-accessible video and control.</li>
+        <li>DC motor direction control through an L298N driver.</li>
+        <li>Power-system integration with a 1S battery and boost conversion.</li>
+        <li>Mechanical iteration using 3D-printed parts and soldered prototypes.</li>
+      </ul>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>&copy; <span id="year"></span> William C. Howell</div>
+    </div>
+  </footer>
+</body>
+
+</html>

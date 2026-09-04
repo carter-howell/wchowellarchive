@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CashCamel Firebase App | William C. Howell</title>
+  <meta name="description" content="Firebase web app for friend-group contracts, deposits, withdrawals, Google sign-in, and agreement-based escrow workflows.">
+  <meta name="keywords" content="Firebase, Google Auth, JavaScript, web app, contract app, escrow, database">
+  <meta name="author" content="William C. Howell">
+  <meta property="og:title" content="CashCamel Firebase App | William C. Howell">
+  <meta property="og:description" content="Firebase web app for friend-group contracts, deposits, withdrawals, Google sign-in, and agreement-based escrow workflows.">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://wchowellarchive.web.app/Projects/CashCamel/ContractCreate.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="CashCamel Firebase App | William C. Howell">
+  <meta name="twitter:description" content="Firebase web app for friend-group contracts, deposits, withdrawals, Google sign-in, and agreement-based escrow workflows.">
+  <meta name="twitter:image" content="https://wchowellarchive.web.app/Projects/CashCamel/ContractCreate.png">
+  <link rel="canonical" href="https://wchowellarchive.web.app/Projects/CashCamel/CashCamel.html">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" href="/favicon.svg">
+  <link rel="stylesheet" href="../style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script type="module" src="../../firebase.js"></script>
+  <script type="module" src="../../main.js"></script>
+</head>
+
+<body data-theme="dark">
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="/index.html">Back to Portfolio</a>
+            <button id="theme-toggle" class="btn-icon" type="button" aria-label="Toggle light and dark theme">Theme</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <article class="card">
+            <h1>CashCamel</h1>
+            <p class="meta">Software Project | 2025 | Completed</p>
+            <div class="tag-list">
+                <span>Firebase</span><span>Google Auth</span><span>Database</span><span>JavaScript</span>
+            </div>
+            <p class="project-summary">
+                A Firebase web app for creating group contracts, tracking deposits and withdrawals, and requiring agreement before money is released.
+            </p>
+            <iframe src="https://CashCamel.web.app" class="post-thumb project-preview-frame">
+            </iframe>
+
+            <h2>Purpose</h2>
+            <p>
+                I built CashCamel as a small escrow-style tool for friend groups. A group can create a contract, record deposits, review withdrawal history, and require agreement before funds are marked as released.
+            </p>
+
+            <h2>Implementation</h2>
+            <p>
+                Firebase handled hosting, database storage, and Google sign-in. The app stores user balances, contract membership, deposits, withdrawals, and agreement state so a group can review the history before approving a release.
+            </p>
+            <p>
+                <a href="https://CashCamel.web.app" target="_blank" rel="noopener">CashCamel.web.app</a>
+            </p>
+
+            <h2>Interface</h2>
+            <p>
+                The contract creation screen collects the group settings and starting information, while the contract screen shows the current balance, transaction history, and withdrawal workflow.
+            </p>
+            <img src="ContractCreate.png" alt="CashCamel contract creation screen" decoding="async">
+            <img src="Contract.png" alt="CashCamel contract detail screen" loading="lazy" decoding="async">
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div>&copy; <span id="year"></span> William C. Howell</div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

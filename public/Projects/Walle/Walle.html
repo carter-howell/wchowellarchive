@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DIY Wall-E Robot | William C. Howell</title>
+  <meta name="description"
+    content="DIY Wall-E robot using ESP32, PCA9685 servo control, L298N motor driver, buck/boost converters, DFPlayer Mini audio, custom C++ code, 3D-printed mechanisms, and PCB design.">
+  <meta name="keywords"
+    content="Wall-E robot, ESP32, PCA9685, L298N, DFPlayer Mini, 3D printing, robotics, embedded C++, servo control, PCB design">
+  <meta name="author" content="William C. Howell">
+  <meta property="og:title" content="DIY Wall-E Robot">
+  <meta property="og:description" content="Custom electronics and code for an ESP32-based 3D-printed Wall-E robot.">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://wchowellarchive.web.app/Projects/Walle/WallEPhoto.avif">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="DIY Wall-E Robot | William C. Howell">
+  <meta name="twitter:description" content="DIY Wall-E robot using ESP32, PCA9685 servo control, L298N motor driver, buck/boost converters, DFPlayer Mini audio, custom C++ code, 3D-printed mechanisms, and PCB design.">
+  <meta name="twitter:image" content="https://wchowellarchive.web.app/Projects/Walle/WallEPhoto.avif">
+  <link rel="canonical" href="https://wchowellarchive.web.app/Projects/Walle/Walle.html">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" href="/favicon.svg">
+  <link rel="stylesheet" href="../style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "DIY Wall-E Robot",
+      "description": "DIY Wall-E robot using ESP32, PCA9685 servo control, L298N motor driver, buck/boost converters, DFPlayer Mini audio, custom C++ code, 3D-printed mechanisms, and PCB design.",
+      "image": "https://wchowellarchive.web.app/Projects/Walle/WallEPhoto.avif",
+      "url": "https://wchowellarchive.web.app/Projects/Walle/Walle.html",
+      "author": {
+          "@type": "Person",
+          "name": "William C. Howell"
+      },
+      "keywords": "ESP32, robotics, PCA9685, L298N, DFPlayer Mini, 3D printing, embedded C++, PCB design"
+  }
+  </script>
+
+  <script type="module" src="../../firebase.js"></script>
+  <script type="module" src="../../main.js"></script>
+  <script type="module" src="./Walle.js"></script>
+</head>
+
+<body data-theme="dark">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/index.html">Back to Portfolio</a>
+      <button id="theme-toggle" class="btn-icon" type="button" aria-label="Toggle light and dark theme">Theme</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <article class="card" data-project-id="/Projects/Walle/Walle.html">
+      <h1>DIY Wall-E Robot</h1>
+      <p class="meta">EE Project | 2025 | Ongoing</p>
+      <div class="tag-list">
+        <span>Robotics</span><span>ESP32</span><span>PCA9685</span><span>L298N</span><span>DFPlayer Mini</span><span>Embedded C++</span><span>3D Printing</span><span>PCB Design</span>
+      </div>
+      <p class="project-summary">
+        Rebuilt the electronics and software for a 3D-printed Wall-E robot using an ESP32, servo and motor drivers, audio hardware, power conversion, custom C++ code, and schematic/PCB design.
+      </p>
+      <dl class="project-facts">
+        <div><dt>Controller</dt><dd>ESP32 with custom Arduino/C++ firmware</dd></div>
+        <div><dt>Motion</dt><dd>PCA9685 servo control and L298N motor drive</dd></div>
+        <div><dt>Power and Audio</dt><dd>Buck/boost converters and DFPlayer Mini module</dd></div>
+      </dl>
+      <img src="/Projects/Walle/WallEPhoto.avif" alt="DIY Wall-E robot" decoding="async">
+
+      <p>
+        This build was inspired by the <a href="https://wired.chillibasket.com/3d-printed-wall-e/" target="_blank" rel="noopener">original 3D-printed Wall-E project</a>. I used the mechanical concept as a starting point, then redesigned the electronics around lower-cost parts, my own wiring, and my own control software.
+      </p>
+
+      <section class="step">
+        <h2>Mechanical Build</h2>
+        <p>
+          I printed the body and alternate remix parts before final assembly. Because the project uses a large amount of filament, printing the alternate parts first helped avoid wasted duplicate prints and made the mechanism easier to adapt.
+        </p>
+        <img src="/Projects/Walle/3DPrinter.avif" alt="3D printer producing Wall-E robot parts" loading="lazy" decoding="async">
+      </section>
+
+      <section class="step">
+        <h2>Electronics</h2>
+        <p>
+          The electronics include an ESP32-32S module, PCA9685 servo controller, L298N 12 V DC motor driver, XL6019 boost converter, 5 V buck converter, DFPlayer Mini audio module, 4 Ohm 3 W speaker, two 12 V motors, and MG90S metal servos.
+        </p>
+        <img src="/Projects/Walle/NewParts.avif" alt="Wall-E robot electronics parts" loading="lazy" decoding="async">
+      </section>
+
+      <section class="step">
+        <h2>Schematic and PCB Work</h2>
+        <p>
+          I created my own schematic and PCB layout in EasyEDA to document a cleaner version of the robot electronics. The current version is wired by hand, but the PCB layout captures the direction for a more maintainable future revision.
+        </p>
+        <img src="/Projects/Walle/Schematic.avif" alt="Wall-E robot electronics schematic" loading="lazy" decoding="async">
+        <img src="/Projects/Walle/PCB.avif" alt="Wall-E robot PCB layout" loading="lazy" decoding="async">
+      </section>
+
+      <section class="step">
+        <h2>Firmware</h2>
+        <p>
+          My code is separate from the original project. It uses the Arduino IDE and ESP32 Bluepad32 support. Before running the full program, I calibrate each servo with test code so the correct travel limits can be entered into the main firmware.
+        </p>
+        <pre id="walle-code" class="code-block">Loading code...</pre>
+      </section>
+
+      <h2>Result</h2>
+      <p>
+        The project demonstrates robotics integration across mechanical printing, power conversion, motor driving, servo control, audio playback, schematic capture, PCB layout, and embedded C++ firmware.
+      </p>
+
+      <div id="walle-video-wrap">
+        <video id="walle-video" src="WalleVid.mp4" playsinline muted preload="metadata" controls>
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>&copy; <span id="year"></span> William C. Howell</div>
+    </div>
+  </footer>
+</body>
+
+</html>

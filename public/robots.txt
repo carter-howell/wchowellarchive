@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://wchowellarchive.web.app/sitemap.xml

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>wchowellarchive Portfolio Site | William C. Howell</title>
+  <meta name="description" content="Firebase-hosted engineering portfolio and project archive built with HTML, CSS, JavaScript, and Firebase hosting.">
+  <meta name="keywords" content="portfolio website, Firebase hosting, HTML, CSS, JavaScript, engineering portfolio">
+  <meta name="author" content="William C. Howell">
+  <meta property="og:title" content="wchowellarchive Portfolio Site | William C. Howell">
+  <meta property="og:description" content="Firebase-hosted engineering portfolio and project archive built with HTML, CSS, JavaScript, and Firebase hosting.">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://wchowellarchive.web.app/Projects/LowVoltageCuttoff/WALLEBMSPCB3DView.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="wchowellarchive Portfolio Site | William C. Howell">
+  <meta name="twitter:description" content="Firebase-hosted engineering portfolio and project archive built with HTML, CSS, JavaScript, and Firebase hosting.">
+  <meta name="twitter:image" content="https://wchowellarchive.web.app/Projects/LowVoltageCuttoff/WALLEBMSPCB3DView.png">
+  <link rel="canonical" href="https://wchowellarchive.web.app/Projects/wchowellarchive/wchowellarchive.html">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" href="/favicon.svg">
+  <link rel="stylesheet" href="../style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script type="module" src="../../firebase.js"></script>
+  <script type="module" src="../../main.js"></script>
+</head>
+
+<body data-theme="dark">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/index.html">Back to Portfolio</a>
+      <button id="theme-toggle" class="btn-icon" type="button" aria-label="Toggle light and dark theme">Theme</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <article class="card">
+      <h1>wchowellarchive Portfolio Site</h1>
+      <p class="meta">Site Project | 2026 | Ongoing</p>
+      <div class="tag-list">
+        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Firebase Hosting</span>
+      </div>
+      <p class="project-summary">
+        The Firebase-hosted engineering portfolio and project archive used to present my resume, project documentation, and technical work.
+      </p>
+      <iframe src="/index.html" class="post-thumb project-preview-frame">
+      </iframe>
+
+      <h2>Purpose</h2>
+      <p>
+        I built this site to keep my engineering and software projects organized in one public archive. It now functions as both a portfolio and a resume companion, with project pages, SEO metadata, downloadable resume assets, and a static Firebase deployment.
+      </p>
+
+      <h2>Implementation</h2>
+      <p>
+        The site is written with HTML, CSS, and JavaScript and hosted on Firebase. The homepage can populate resume highlights from a Word document, while the visible resume download points to a PDF. Project pages use shared styling, social preview metadata, and structured data on the main engineering projects.
+      </p>
+      <p>
+        <a href="https://wchowellarchive.web.app" target="_blank" rel="noopener">wchowellarchive.web.app</a>
+      </p>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>&copy; <span id="year"></span> William C. Howell</div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
