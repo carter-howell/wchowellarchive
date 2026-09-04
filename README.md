@@ -1,42 +1,54 @@
-# wchowellarchive Portfolio Site
+# wchowellarchive
 
-Status: Active portfolio/site project
+Status: Active portfolio archive
 
-wchowellarchive is a Firebase-hosted engineering portfolio and project archive used to present Carter Howell's resume, project documentation, and technical work. The repo includes the static site source, Firebase configuration, project pages, and public media used by the portfolio.
+wchowellarchive is Carter Howell's public engineering portfolio and project archive. It collects hardware, embedded systems, PCB, robotics, software-support, and older archive projects in one place so each project can be understood beyond a short resume bullet.
 
-![Portfolio homepage preview](media/MainPage.png)
+![Portfolio homepage preview](media/portfolio-homepage.png)
 
-## Overview
-
-The site organizes engineering and software projects into a public archive. It acts as both a portfolio and a resume companion, with project pages, resume links, SEO metadata, and Firebase hosting.
-
-## Implementation
-
-The portfolio is built with HTML, CSS, JavaScript, and Firebase Hosting. Project pages use shared styling, metadata, and structured descriptions so the archive can grow as new projects mature.
-
-## Repository Structure
-
-- `public/`: static portfolio pages, shared CSS/JavaScript, project pages, and public media
-- `firebase.json`: Firebase Hosting configuration
-- `firestore.rules`: Firestore rules used by the project
-- `firestore.indexes.json`: Firestore index configuration
-- `package.json`: project scripts and tooling metadata
-
-## Deployment Config
-
-The public repo uses placeholder Firebase web configuration in `public/firebase.js`. Replace those values with the deployment project's Firebase web app config before deploying from a fresh checkout.
-
-## Role In The Portfolio
-
-This project is supporting infrastructure. It matters because it connects the public story together, but the strongest visible work should still be the engineering projects themselves: PCB design, embedded systems, robotics, and power electronics.
-
-## Future Improvements
-
-- Add GitHub links on each project page.
-- Add stronger project filtering by hardware/software/status.
-- Add more diagrams and measured results for engineering projects.
-- Keep older software/game projects visibly secondary to engineering work.
-
-## Live Site
+## Live Portfolio
 
 [wchowellarchive.web.app](https://wchowellarchive.web.app)
+
+## Purpose
+
+The portfolio acts as a public index of Carter's engineering work. It gives project context, photos, documentation links, and repository links for work that is useful to show publicly.
+
+The strongest role of the site is to support the larger professional narrative:
+
+> Electrical engineering student building toward embedded systems, PCB design, robotics, product development, power electronics, and engineering automation.
+
+## Project Focus
+
+The archive is organized to keep electrical and product-oriented work visible first while still preserving older software and learning projects.
+
+Current emphasis:
+
+- ESP32-based robotics and embedded control
+- PCB design, battery protection, and power distribution
+- Hardware/software/mechanical integration
+- Engineering automation and AI-assisted EDA workflows
+- Supporting software tools and cloud-connected project infrastructure
+
+## Repository Scope
+
+This repository is intentionally a public project exhibit, not the deployment source for the live website.
+
+It is kept lightweight so visitors can understand what the portfolio is, why it exists, and where to view it without browsing through static site implementation files or deployment configuration.
+
+## Featured Work
+
+The portfolio currently highlights projects such as:
+
+- DIY Wall-E Robot
+- Low-Voltage Cutoff PCB
+- Dual Robotic Arms
+- Web-Controlled RC Car
+- AI-assisted PCB design and EDA automation work
+- Supporting software and older archive projects
+
+## Maintenance Notes
+
+The live portfolio should continue evolving as stronger engineering work is completed. Future updates should prioritize measured results, cleaner project photos, schematics, PCB renders, firmware architecture, and revision history for hardware projects.
+
+Software projects can remain visible, but they should support the electrical-engineering and product-development story rather than dominate the portfolio.
