@@ -2,7 +2,7 @@
 
 Status: Active portfolio archive
 
-wchowellarchive is Carter Howell's public engineering portfolio and project archive. It collects hardware, embedded systems, PCB, robotics, software-support, and older archive projects in one place so each project can be understood beyond a short resume bullet.
+wchowellarchive is my public engineering portfolio and project archive. I use it to collect hardware, embedded systems, PCB, robotics, software-support, and older archive projects in one place so each project can be understood beyond a short resume bullet.
 
 ![Portfolio homepage preview](media/portfolio-homepage.png)
 
@@ -12,7 +12,7 @@ wchowellarchive is Carter Howell's public engineering portfolio and project arch
 
 ## Purpose
 
-The portfolio acts as a public index of Carter's engineering work. It gives project context, photos, documentation links, and repository links for work that is useful to show publicly.
+The portfolio acts as a public index of my engineering work. It gives project context, photos, documentation links, and repository links for work that is useful to show publicly.
 
 The strongest role of the site is to support the larger professional narrative:
 
@@ -20,7 +20,7 @@ The strongest role of the site is to support the larger professional narrative:
 
 ## Project Focus
 
-The archive is organized to keep electrical and product-oriented work visible first while still preserving older software and learning projects.
+I organize the archive to keep electrical and product-oriented work visible first while still preserving older software and learning projects.
 
 Current emphasis:
 
@@ -32,13 +32,13 @@ Current emphasis:
 
 ## Repository Scope
 
-This repository is intentionally a public project exhibit, not the deployment source for the live website.
+I keep this repository as a public project exhibit, not the deployment source for the live website.
 
-It is kept lightweight so visitors can understand what the portfolio is, why it exists, and where to view it without browsing through static site implementation files or deployment configuration.
+I keep it lightweight so visitors can understand what the portfolio is, why it exists, and where to view it without browsing through static site implementation files or deployment configuration.
 
 ## Featured Work
 
-The portfolio currently highlights projects such as:
+My portfolio currently highlights projects such as:
 
 - DIY Wall-E Robot
 - Low-Voltage Cutoff PCB
@@ -49,6 +49,6 @@ The portfolio currently highlights projects such as:
 
 ## Maintenance Notes
 
-The live portfolio should continue evolving as stronger engineering work is completed. Future updates should prioritize measured results, cleaner project photos, schematics, PCB renders, firmware architecture, and revision history for hardware projects.
+I want the live portfolio to keep evolving as stronger engineering work is completed. Future updates should prioritize measured results, cleaner project photos, schematics, PCB renders, firmware architecture, and revision history for hardware projects.
 
-Software projects can remain visible, but they should support the electrical-engineering and product-development story rather than dominate the portfolio.
+Software projects can remain visible, but I want them to support the electrical-engineering and product-development story rather than dominate the portfolio.
