@@ -2,7 +2,7 @@
 
 Status: Active portfolio archive
 
-wchowellarchive is my public engineering portfolio and project archive. I use it to collect hardware, embedded systems, PCB, robotics, software-support, and older archive projects in one place so each project can be understood beyond a short resume bullet.
+wchowellarchive is my engineering portfolio and project archive. I use it to collect hardware, embedded systems, PCB, robotics, software-support, and older archive projects in one place so each project can be understood beyond a short resume bullet.
 
 ![Portfolio homepage preview](media/portfolio-homepage.png)
 
@@ -32,7 +32,7 @@ Current emphasis:
 
 ## Repository Scope
 
-I keep this repository as a public project exhibit, not the deployment source for the live website.
+I keep this repository as a project exhibit, not the deployment source for the live website.
 
 I keep it lightweight so visitors can understand what the portfolio is, why it exists, and where to view it without browsing through static site implementation files or deployment configuration.
 
